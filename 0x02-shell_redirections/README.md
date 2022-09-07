@@ -1,1 +1,1 @@
- a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+a shell script that creates a file named exactly \*\\"Best School"\"\\*$\?\*\*\*\*\*:) containing the text Best School ending by a new line.
