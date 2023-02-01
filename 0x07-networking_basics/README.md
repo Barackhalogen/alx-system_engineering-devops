@@ -5,7 +5,7 @@
 4. Once packets have been sent to the right network device using IP using either UDP or TCP as a mode of transportation, it needs to actually enter the network device.
 5. Write a Bash script that pings an IP address passed as an argument.
 
-**image
+<h1>image</h1>
 <img
   src="readme.png"
   alt="readme" >
