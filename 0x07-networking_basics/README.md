@@ -7,6 +7,6 @@
 
 ** image
 <img
-  src="/readme.png"
+  src="0x07-networking_basics/readme.png"
   alt="readme" >
 </img>
