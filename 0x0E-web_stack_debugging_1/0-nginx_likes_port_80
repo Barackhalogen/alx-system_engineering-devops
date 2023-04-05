@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# debugging, note that nginx service is running on port 80. init command says serice not running if true
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx restart
-pkill -o nginx
+# running nginx on port 80
+# Models include: first, dropping existing ../sites-enabled/default update on the same line with
+# ../sites-available/default. 
+# Attn: command flag -s init a symbolic link, -f command drops the existing file and updates it
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
