@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This command is used to run a Bash script that accepts one argument
+# as shown, it runs the 'whoami' command under the user passed as an argument
+
+sudo -u "$1" whoami
