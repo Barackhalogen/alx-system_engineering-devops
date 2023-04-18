@@ -1,3 +1,4 @@
+#
 # rules.before
 #
 # Rules that should be run before the ufw command line added rules. Custom
@@ -62,7 +63,7 @@ COMMIT
 # if MULTICAST, RETURN
 -A ufw-not-local -m addrtype --dst-type MULTICAST -j RETURN
 
-# if BROADCAST, RETURN
+# else if BROADCAST, RETURN
 -A ufw-not-local -m addrtype --dst-type BROADCAST -j RETURN
 
 # all other non-local packets are dropped
@@ -77,5 +78,5 @@ COMMIT
 # is uncommented)
 -A ufw-before-input -p udp -d 239.255.255.250 --dport 1900 -j ACCEPT
 
-# don't delete the 'COMMIT' line or these rules won't be processed
+# don't truncate the 'COMMIT' line or these rules won't be processed
 COMMIT
