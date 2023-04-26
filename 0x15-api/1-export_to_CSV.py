@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Accessing a REST API for todo lists of employees"""
+"""Implementing a REST API for todo lists of employees
+	to export data in the CSV format.
+"""
 
 import requests
 import sys
